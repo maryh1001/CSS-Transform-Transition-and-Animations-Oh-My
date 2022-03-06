@@ -28,16 +28,27 @@ nav {
 }
 
 @keyframes top {
-  from {}
-  to {}
+  from {
+    transform: matrix(1, -0.5, 0, 1, 0, 0);
+  }
+  to {
+    transform: matrix(1, 1, 0, 1, 0, 35);
+  }
 }
 
 @keyframes middle {
-  from {}
-  to {}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes bottom {
-  from {}
-  to {}
-}
+  from {
+    transform: matrix(1, -0.5, 0, 1, 0, 0);
+  }
+  to {
+    transform: matrix(1, -1, 0, 1, 0, -35);
+  }}
